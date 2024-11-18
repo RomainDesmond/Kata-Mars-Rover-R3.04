@@ -23,22 +23,33 @@ public class Rover {
 		west.setRight(direction);
 		west.setLeft(south);
 		
+		direction.setRover(this);
+		south.setRover(this);
+		east.setRover(this);
+		west.setRover(this);
+		
 	}
 	
 	public String ShowDirectionRover() {
 		return direction.ShowDirection();
 	}
-	public void Movement() {
-		
+	public void Movement(int distance) {
+		direction.Forward(distance);
 	}
 	
-	public void ChangingDirectionRight() {
+	public void turnOnTheRight() {
 		direction=direction.getRight();
 	}
-	public void ChangingDirectionLeft() {
+	public void turnOnTheLeft() {
 		direction=direction.getLeft();
 	}
-	public String ShowPosition() {
+	public String showPosition() {
 		return "The position is x: "+x+" y: "+y;
+	}
+	public void movementOnX(int distance) {
+		this.x=x+distance;
+	}
+	public void movementOnY(int distance) {
+		this.y=y+distance;
 	}
 }

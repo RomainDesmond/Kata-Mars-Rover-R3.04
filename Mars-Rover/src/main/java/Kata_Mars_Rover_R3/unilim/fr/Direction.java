@@ -4,6 +4,11 @@ public abstract class Direction {
 	String direction;
 	Direction right;
 	Direction left;
+	Rover rover;
+	
+	public void setRover(Rover rover) {
+		this.rover=rover;
+	}
 	public String ShowDirection() {
 		return "The rover direction is "+direction;
 	}
@@ -21,6 +26,7 @@ public abstract class Direction {
 	public Direction getLeft() {
 		return left;
 	}
+	protected abstract void Forward(int distance);
 
 	
 }

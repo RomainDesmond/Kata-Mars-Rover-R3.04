@@ -5,8 +5,8 @@ public class South extends Direction{
 	public South() {
 		this.direction="South";
 	}
-	public int Forward(int distance,int position) {
-		return distance-position;
+	public void Forward(int distance) {
+		rover.movementOnX(-distance);
 	}
 
 }
