@@ -1,4 +1,4 @@
-package Kata_Mars_Rover_R3.unilim.fr;
+package Kata_Mars_Rover_R3.unilim.fr.Model;
 
 public class North extends Direction{
 

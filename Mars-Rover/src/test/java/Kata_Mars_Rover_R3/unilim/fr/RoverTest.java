@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
+import Kata_Mars_Rover_R3.unilim.fr.Model.Rover;
+
 public class RoverTest {
 	Rover rover;
 	
