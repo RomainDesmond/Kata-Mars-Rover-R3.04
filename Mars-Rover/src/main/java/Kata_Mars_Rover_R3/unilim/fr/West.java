@@ -5,5 +5,7 @@ public class West extends Direction {
 	public West() {
 		this.direction="West";
 	}
-
+	public int Forward(int distance,int position) {
+		return distance-position;
+	}
 }

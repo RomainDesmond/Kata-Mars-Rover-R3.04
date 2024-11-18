@@ -12,4 +12,10 @@ public class RoverTest {
 		rover=new Rover();
 		assertEquals("The rover direction is North", rover.ShowDirectionRover());
 	}
+	@Test
+	void Test_movement() {
+		rover=new Rover();
+		assertEquals("The position is x: 0 y: 0",rover.ShowPosition());
+		
+	}
 }
