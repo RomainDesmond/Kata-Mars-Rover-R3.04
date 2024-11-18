@@ -52,4 +52,10 @@ public class Rover {
 	public void movementOnY(int distance) {
 		this.y=y+distance;
 	}
+	public int getX() {
+		return x;
+	}
+	public int getY() {
+		return y;
+	}
 }

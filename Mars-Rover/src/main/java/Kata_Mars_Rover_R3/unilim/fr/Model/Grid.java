@@ -13,9 +13,23 @@ public class Grid {
 		this.height=10;
 	}
 	
-	public void ShowGrid() {
-			//Todo
-		}
-	
+	public void ShowGrid(Rover rover) {
+		for (int cpt = 0; cpt < height; cpt++) {
+			for (int cpt1 = 0; cpt1 < width; cpt1++) {
+				if ((rover.getX()==cpt) && (rover.getY()==cpt1)) {
+					System.out.print("*");
+					System.out.print("|");
+				}
+				
+				else {
+					System.out.print("-");
+					System.out.print("|");
+				}
+				
+
+			}
+			System.out.println();
+			}
+	}
 	
 }
