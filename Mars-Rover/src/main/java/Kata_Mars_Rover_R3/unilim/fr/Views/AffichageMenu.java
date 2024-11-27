@@ -1,6 +1,6 @@
 package Kata_Mars_Rover_R3.unilim.fr.Views;
 
-public class Interface{
+public class AffichageMenu{
 
 	public void afficherMenu() {
 		System.out.println("---------------");

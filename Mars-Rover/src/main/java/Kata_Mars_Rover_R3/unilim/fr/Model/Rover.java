@@ -5,7 +5,6 @@ public class Rover {
 	int y;
 	Direction direction;
 	
-	
 	public Rover() {
 		this.x=0;
 		this.y=0;
@@ -26,8 +25,7 @@ public class Rover {
 		direction.setRover(this);
 		south.setRover(this);
 		east.setRover(this);
-		west.setRover(this);
-		
+		west.setRover(this);	
 	}
 	
 	public String ShowDirectionRover() {

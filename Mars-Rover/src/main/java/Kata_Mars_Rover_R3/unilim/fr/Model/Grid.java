@@ -12,21 +12,17 @@ public class Grid {
 		this.width=10;
 		this.height=10;
 	}
-	
 	public void ShowGrid(Rover rover) {
-		for (int cpt = 0; cpt < height; cpt++) {
-			for (int cpt1 = 0; cpt1 < width; cpt1++) {
-				if ((rover.getX()==cpt) && (rover.getY()==cpt1)) {
+		for (int Line = 0; Line < height; Line++) {
+			for (int Column = 0; Column < width; Column++) {
+				if ((rover.getX()==Line) && (rover.getY()==Column)) {
 					System.out.print("*");
 					System.out.print("|");
 				}
-				
 				else {
 					System.out.print("-");
 					System.out.print("|");
 				}
-				
-
 			}
 			System.out.println();
 			}
